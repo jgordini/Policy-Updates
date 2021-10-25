@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>iot</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h2 id="internet-of-things-iot-security-rule">INTERNET OF THINGS (IoT) SECURITY RULE</h2>
+<p>Approved and Implemented: September 20, 2019</p>
+<p>Reviewed/Updated: February 12, 2021</p>
+<p><strong>Related Policies, Procedures, and Resources</strong></p>
+<!--
+<p><a href="http://www.uab.edu/it/home/component/k2/item/822-data-protection-and-security-policy">Data Protection and Security Policy</a></p>
+<p><a href="http://www.uab.edu/policies/content/Pages/UAB-IT-POL-0000789.aspx"><u>Data Access Policy</u></a></p>
+<p><a href="http://www.uab.edu/policies/content/Pages/UAB-IT-POL-0000004.aspx"><u>Acceptable Use Policy</u></a></p>
+<p><a href="http://www.uab.edu/it/home/component/k2/item/818-data-protection-rule"><u>Data Protection Rule</u></a></p>
+-->
+<h3 id="s_1-0">1.0 Introduction</h3>
+<p>Securing an Internet of Things (IoT) infrastructure requires a rigorous security-in-depth strategy. By taking a proactive approach to managing IoT devices, the university is able to reduce or eliminate the potential for exploitation and prevent the excessive time, effort, and potential costs that often result when responding to an exploitation after it has occurred.</p>
+<h3 id="s_2-0">2.0 Scope and Applicability</h3>
+<p>All IoT devices that reside on the UAB network (wired or wireless) must be proactively managed and adhere to the university’s IoT security strategy.</p>
+<h3 id="s_3-0">3.0 IoT Device Security</h3>
+<ol type="1">
+<li><p>Default credentials for any IoT device/component must be changed, and the UAB Password/Passphrase Standard must be followed when changing such credentials.</p></li>
+<li><p>Where possible, create standard user accounts for the operation of the IoT device/component. If possible, disable any default administrator account and create a custom administrator account. Be sure that the custom admin account is not named “admin” or “administrator.” Only use the admin account when such elevated privileges are required to make a change. Do not use an administrator account for standard operations.</p></li>
+<li><p>IoT admins must actively identify such vulnerabilities and patch them as soon as possible. The availability of vendor patches also should be monitored on a regular basis.</p></li>
+<li><p>Define the minimum services and features required to perform operations and enable just them. If a service or feature is not needed, disable it or, even better, uninstall it. Define a configuration guide that details the minimum required services and features and use follow that guide when building and configuring new IoT devices/components.</p></li>
+<li><p>Vendors should provide a configuration guide. Follow the guide when building a device/component. Some vendors provide secure configuration (or “hardening”) guides. Ask the vendor about such guides and, if available, use them instead of standard configuration guides.</p></li>
+<li><p>UPnP connections are not allowed or supported on the University’s network.</p></li>
+<li><p>Create an initial inventory of IoT devices/components and their configuration specs. Maintain this inventory over time. When a new device/component is deployed, add it to the list. When an existing device is decommissioned, remove it from the list. When a device/component is patched, update its entry in the list. Review the list and audit the devices on a quarterly basis to ensure that the list is accurate. Address any gaps or issues discovered during the quarterly audit.</p></li>
+<li><p>Where possible, avoid the use of MAC-based authentication in favor of a more robust authentication method. If MAC-based authentication is the only method of connecting to a wireless network, that device/component cannot be allowed to connect to any UAB network without being heavily segmented from UAB IT resources and traffic.</p></li>
+<li><p>If the IoT device/component has PAN networking capability but that capability is not needed, disable the associated PAN wireless functionality.</p></li>
+<li><p>Identify all data that will be transmitted/received by the IoT device/component in its IT environment. Maintain a record of the data types involved. Classify each data type following UAB’s <a href="http://www.uab.edu/it/home/component/k2/item/801-Data%20Classification%20Rule">Data Classification Rule</a>, and where necessary, protect Sensitive and Restricted/PHI data types using the controls mandated by UAB’s <a href="http://www.uab.edu/it/home/component/k2/item/818-data-protection-rule">Data Protection Rule</a>. Also, define and maintain a list of authorized protocols that are approved for use by the IoT device/component and in its associated environment. Ensure that only those authorized protocols are used and detect and eliminate any unauthorized protocols.</p></li>
+<li><p>Network and host logs for the IoT device/component and its associated environment must be collected, stored, and reviewed on a regular basis. Reviews of the logs should focus on eliminating all instances of expected traffic and behavior so that anomalous activity can quickly be identified and investigated.</p></li>
+<li><p>If the IoT device/component has WiFi SSID Broadcasting capability (2.4Ghz or 5Ghz), disable any feature that allows for broadcast of WiFi networks. This capability will cause interference with the campus WiFi air space. Any use of Campus WiFi spaces requires prior authorization.</p></li>
+<li><p>If the IoT device/component utilizes Power-over-Ethernet (POE), VPIT reserves the right to remove any IoT device using excessive amounts of inline power. Campus network equipment has a limited amount of inline power available for use by IoT devices. If the power requirements exceed what is available, an external power injector may be required.</p></li>
+<li><p>If the IoT device/components has the capability to act as an Ethernet hub or bridge, disable any unused interfaces</p></li>
+<li><p>Many IoT devices go unmanaged once installed. These devices are prone to unpatched bugs and exploitation by hacking tools which may cause traffic patterns that affect campus core network. VPIT reserves the right to remove any IoT device from the campus network if the device is transmitting or receiving data that is harmful to the operation of the network.</p></li>
+<li><p>Segmentation / Isolation</p></li>
+</ol>
+<p>16.1 Cameras should be connected in collaboration with UAB Physical Security and provisioned into the Physical Security VLAN.</p>
+<p>16.2 VOIP Phones and conference devices should be connected in collaboration with UAB Telecommunications and provisioned into the VOIP VLAN.</p>
+<p>16.3 Access Control devices should be connected in collaboration with UAB Physical Security and provisioned into the Physical Security VLAN.</p>
+<p>16.4 SCADA devices should be connected in collaboration with UAB Facilities and provisioned into the SCADA VLAN.</p>
+<p>16.5 Network segmentation should be provisioned in accordance with the UAB’s <a href="http://www.uab.edu/it/home/component/k2/item/801-Data%20Classification%20Rule">Data Classification Rule</a> and by UAB’s <a href="http://www.uab.edu/it/home/component/k2/item/818-data-protection-rule">Data Protection Rule</a>. If an IoT device processes or transfers Restricted data, if connected to the University network, it must be connected on a Restricted VLAN/Network.</p>
+<p>16.6 General IOT devices that do not meet specific controls above should adhere to the <a href="http://www.uab.edu/policies/content/Pages/UAB-IT-POL-0000004.aspx">Acceptable Use Policy</a>.</p>
+<h3 id="s_4-0">4.0 Enforcement and Implementation</h3>
+<h3 id="s_4-1">4.1 Roles and Responsibilities</h3>
+<p>Each University academic and business unit is responsible for implementing, reviewing and monitoring internal policies, practices, etc. to assure compliance with this standard security rule.</p>
+<p>The Vice President of Information Technology Office is responsible for enforcing this standard security rule.</p>
+<h3 id="s_4-2">4.2 Consequences and Sanctions</h3>
+<p>Non-compliance with these standards may incur the same types of disciplinary measures and consequences as violations of other University policies, including progressive discipline up to and including termination of employment. In the cases where students are involved, such issues will result in the reporting of a Student Code of Conduct violation.</p>
+<p>Any device that does not meet the minimum security requirements outlined in this standard may be removed from the UAB network, disabled, etc., as appropriate until the device can comply with this standard.</p>
+<h3 id="s_5-0">5.0 Exceptions</h3>
+<p>Exceptions may be granted in cases where security risks have mitigating controls in place to lessen the intensity from a critical to a minimal level. To request a security exception, complete the <a href="https://uabprod.service-now.com/service_portal?id=sc_category&amp;sys_id=b179a61437d34e8024a67c1643990e80">UAB Security Policy Exception</a> Request from the UAB IT Tech Help portal.</p>
+<h3 id="s_6-0">6.0 Definitions</h3>
+<ol type="1">
+<li><p><strong>IOT (Internet of Things</strong>): IoT consists of two foundational aspects—1) the Internet itself and, 2) semiautonomous devices (the “things”) that leverage inexpensive compute, networking, sensing, and actuation capabilities to sense the physical world and act on it. Such devices have the capability to connect to the Internet—being Internet Protocol (IP) based—but may also be deployed in stand-alone IP networks not connected to the Internet. These devices are unambiguously identified using the Web and Internet’s existing unique identification standards, such as the many Universal Resource Identifier (URI) schemes. With their sensor and activation capabilities, they establish relationships between the digital and physical worlds that did not previously exist. IoT includes the functions that allow users and organizations to analyze and understand the data gathered and actions taken by the things.</p></li>
+<li><p>An IOT device may be any physical object that conducts University business and may be connected to the Internet or campus network using wired or wireless technology. These devices have historically been stand alone or localized in communication, but now have extended modifications and technology allowing the device to communicate over the local network and Internet. Examples include (but are not limited to): cameras, temperature sensors, thermostats, desk phones, card readers, and lighting control systems. These devices typically do not allow user direct access to their underlying operating systems, management is generally direct-to-device (via html or console) or internet based (via a third party web site or smartphone application)</p></li>
+<li><p><strong>SCADA</strong>: Supervisory control and data acquisition (SCADA) is a computer system used to monitor and control plant processes. As it relates to this policy, any IOT device used in conjunction with a SCADA system to provide sensor, monitoring, or operational functions.</p></li>
+<li><p><strong>User</strong>: Any individual who performs University business.</p></li>
+<li><p><strong>User Account</strong>: Information used by a user to gain access to UAB ePHI resources. This includes, but is not limited to, user IDs, passwords, personal identification numbers (PIN), tokens, certificates, biometrics, and smart cards.</p></li>
+<li><p><strong>User ID</strong>: An individual ID used to identify a unique individual when logging into a UABHS information resource such as a computer network, service, or application</p></li>
+<li><p><strong>Camera:</strong> any device used to capture and record still or motion images in any spectrum</p></li>
+<li><p><strong>VOIP (Voice over Internet Protocol) phones:</strong> any device used to transmit voice communication data through the Universities central telecommunications infrastructure</p></li>
+<li><p><strong>Access Control devices</strong>: Any device used to control access to University interior or exterior areas</p></li>
+</ol>
+<!--
+<p><strong>Change History:</strong></p>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 51%" />
+<col style="width: 19%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;"><strong>Revision</strong></th>
+<th style="text-align: center;"><strong>Description</strong></th>
+<th style="text-align: center;"><strong>Approval</strong></th>
+<th style="text-align: center;"><strong>Date</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1.0</td>
+<td style="text-align: center;">Final version – approved by President Watts</td>
+<td style="text-align: center;">Dr. Curt Carver</td>
+<td style="text-align: center;">9/20/2019</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: center;">Reviewed - no changes/updates</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">2/12/2021</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">​</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+-->
+</body>
+</html>
